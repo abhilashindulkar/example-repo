@@ -1,0 +1,57 @@
+git
+
+git status									to check for the status of the files
+
+git add <filename>							to add the files from untracked state to tracked state.(staging)
+
+git diff									to see the diffences 
+
+git commit -m "message"						to commit the files from staged state. (commiting)
+
+git push origin master						to push the changes from local to remote repo(github)
+
+git log										to check commited logs--commitids and details
+
+
+
+git log --topo-order --all --graph --date=local --pretty=format:'%C(green)%h%C(reset) %><(55,trunc)%s%C(red)%d%C(reset) %C(blue)[%an]%C(reset) %C(yellow)%ad%C(reset)%n'
+
+
+
+git checkout <commitid%40characters>		to switch back to older commitid, header will set on that id on local repo.
+
+git checkout <filename>						to switch back to last changes saved in the file.
+
+git checkout <branch>						to switch to other branch
+
+
+			-------------------tracked-----------------------
+
+untracked-----staged-------commited--------modified------pushed
+
+		addfile
+					commitfile
+					
+
+
+clone the repo using ssh
+
+create the key on local
+
+head over .ssh directory
+
+ssh-keygen -o
+
+enter file
+
+no passphrase
+
+add the public key to the ssh/gpg key in settings of the github
+
+now, come to terminal
+
+eval `ssh-agent`
+
+ssh-add id_rsa
+
+git clone <ssh-repo-URL>
